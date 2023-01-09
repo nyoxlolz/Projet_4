@@ -1,3 +1,8 @@
+html {
+    overflow-x: hidden;
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +10,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 a,
@@ -32,7 +38,6 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -41,12 +46,13 @@ a:hover {
 }
 
 .bloc .container {
-    padding-left: 0;
-    padding-right: 0;
+    /*padding-left: 0;
+    padding-right: 0;*/
 }
 
 .bloc-lg {
     padding: 100px 50px;
+
 }
 
 .bloc-md {
@@ -234,6 +240,7 @@ a:hover {
 .l-bloc h6 a,
 .l-bloc p a {
     color: blue;
+    width: fit-content;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -287,6 +294,7 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 32px;
+    letter-spacing: 10px;
 }
 
 .navbar {
@@ -709,7 +717,7 @@ p {
 }
 
 .social {
-    /*max-width: 400px;*/
+    max-width: 400px;
     margin: auto auto auto auto;
     color: #054aff;
 }
@@ -717,13 +725,20 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    font-weight: 700;
+}
+
+h2.modif {
+
+    text-align: center;
+    margin-top: 100px;
 }
 
 h3 {
     font-size: 15px;
-    text-transform: uppercase;
     font-weight: 700;
     color: #333333 !important;
+    margin-bottom: 40px;
 }
 
 .med-width-whitespace {
@@ -739,9 +754,9 @@ h1 {
 h4 {
     color: white !important;
     font-size: 18px;
-    text-transform: uppercase;
     font-weight: 700;
-    padding-top: 60px;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .icons {
@@ -756,6 +771,7 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .portfolio-row {
@@ -843,7 +859,7 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -855,8 +871,8 @@ h4 {
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
-    }
-}
+    } 
+} */
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
@@ -881,9 +897,9 @@ h4 {
 }
 
 @media (max-width: 991px) {
-    .container {
+    /*.container {
         width: 100%;
-    }
+    }*/
 
     .b-parallax {
         background-attachment: scroll;
@@ -1098,15 +1114,17 @@ h4 {
 .col-sm-4 {
 
     margin-top: 50px;
+
 }
 
 ol {
-    width: 300px;
+    width: 90%;
     height: 80px;
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
     list-style: none;
+    padding: 0;
 }
 
 
@@ -1114,5 +1132,8 @@ ol {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
 }
