@@ -11,6 +11,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none !important;
+    color: #054aff;
 }
 
 a:hover {
@@ -54,6 +55,7 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+    text-align: center;
 }
 
 .bg-center,
@@ -231,7 +233,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: blue;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -305,6 +307,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    height: 100px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -317,7 +320,6 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
     float: right;
     z-index: 1;
 }
@@ -654,16 +656,15 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
+
     font-family: "helvetica";
     font-weight: 400;
-    color: black !important;
+    color: black;
+
 }
 
-.container {
-    max-width: 1000px;
-}
+
 
 .hero-bloc-text {
     font-size: 38px;
@@ -688,7 +689,8 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+
+    text-align: center;
     margin: auto auto auto auto;
 }
 
@@ -709,6 +711,7 @@ p {
 .social {
     /*max-width: 400px;*/
     margin: auto auto auto auto;
+    color: #054aff;
 }
 
 h2 {
@@ -734,7 +737,11 @@ h1 {
 }
 
 h4 {
-    color: #333333 !important;
+    color: white !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 60px;
 }
 
 .icons {
@@ -743,8 +750,8 @@ h4 {
 }
 
 .white {
-    color: black !important;
-    font-size: 15px;
+    color: white !important;
+    font-size: 18px;
 }
 
 .portfolio-thumb {
@@ -772,6 +779,7 @@ h4 {
 
 .bgc-white {
     background-color: #FFFFFF;
+    width: auto
 }
 
 .bgc-dark-slate-blue {
@@ -784,10 +792,12 @@ h4 {
 
 .tc-white {
     color: white !important;
+    text-align: center;
+    font-size: 24px;
 }
 
 .btn-atomic-tangerine {
-    background: red;
+    background: #c27956;
     color: black !important;
 }
 
@@ -1088,4 +1098,21 @@ h4 {
 .col-sm-4 {
 
     margin-top: 50px;
+}
+
+ol {
+    width: 300px;
+    height: 80px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    list-style: none;
+}
+
+
+.row-modif {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
