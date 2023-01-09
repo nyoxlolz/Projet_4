@@ -17,7 +17,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none !important;
-    color: #054aff;
+    color: #6a6a6a;
 }
 
 a:hover {
@@ -60,7 +60,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 20px 0px;
     text-align: center;
 }
 
@@ -239,7 +239,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: blue;
+    color: #6a6a6a;
     width: fit-content;
 }
 
@@ -309,6 +309,9 @@ a:hover {
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
 }
 
 .navbar-brand img {
@@ -316,6 +319,7 @@ a:hover {
     margin: 0 5px 0 0;
     display: inline;
     height: 100px;
+    width: 60%;
 }
 
 .navbar-brand img[src$=svg] {
@@ -719,7 +723,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
-    color: #054aff;
+    color: #6a6a6a;
 }
 
 h2 {
